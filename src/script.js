@@ -17,7 +17,7 @@ function startVideo() {
   }
 }
 
-video.addEventListener("play", () => {
+video.addEventListener("playing", () => {
   const canvas = faceapi.createCanvasFromMedia(video);
   document.body.append(canvas);
   const displaySize = { width: 800, height: 600 };
